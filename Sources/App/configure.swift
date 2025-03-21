@@ -27,7 +27,7 @@ public func configure(_ app: Application) async throws {
         let update = try req.content.decode(Update.self) // Здесь Update — это структура для данных Telegram
 
         // Ты можешь обработать входящие сообщения в этой части
-        print("Получено обновление: \(update)") // Например, просто выводим обновление
+        app.logger.info("Получено обновление: \(update)")
 
         // Возвращаем успешный ответ
         return .ok
