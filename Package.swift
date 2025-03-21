@@ -17,6 +17,8 @@ let package = Package(
         .package(url: "https://github.com/vapor/leaf.git", from: "4.3.0"),
         // 🔵 Non-blocking, event-driven networking for Swift. Used for custom executors
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.65.0"),
+        // TelegramBotSDK
+//        .package(url: "https://github.com/rapierorg/TelegramBotSDK.git", from: "0.9.0"),
     ],
     targets: [
         .executableTarget(
