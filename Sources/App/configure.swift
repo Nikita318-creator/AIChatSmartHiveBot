@@ -15,6 +15,9 @@ public func configure(_ app: Application) async throws {
 
     app.views.use(.leaf)
 
-    // register routes
+    // Register routes
     try routes(app)
+
+    // Добавляем конфигурацию для прослушивания всех интерфейсов
+    app.http.server.configuration.address = .hostname("0.0.0.0", port: 8080)
 }
